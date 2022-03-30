@@ -35,7 +35,7 @@ export default {
                 console.log(commits);
             },
             setCommit(sha) {
-                localStorage.setItem("wantedCommit", sha)
+                localStorage.setItem("requestedCommit", sha)
             }
         },
         created() {
