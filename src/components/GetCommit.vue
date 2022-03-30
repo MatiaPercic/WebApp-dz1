@@ -2,14 +2,13 @@
   <div id="app">
     <ul id="example-1">
         <li v-for="commit in this.commits" :key="commit">
-            Commit: <router-link to="/details/sha" @click="setCommit(commit.sha)">{{ commit.sha }}</router-link>
+             <router-link to="/details/sha" @click="setCommit(commit.sha)">{{ commit.sha }}</router-link>
         </li>
     </ul>
   </div>
 </template>
 
 <script>
-
 import axios from 'axios';
 
 export default {

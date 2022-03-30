@@ -1,17 +1,6 @@
-<template>
-  <div id="app">
-    <ul id="example-1" v-if="commit.sha">
-        <li> {{ commit.sha }} </li>
-        <li> {{ commit.commit.author.name }} </li>
-        <li> {{ commit.commit.author.email }} </li>
-        <li> {{ commit.commit.message }} </li>
-        <li> {{ commit.commit.author.date }} </li>
-    </ul>
-  </div>
-</template>
+
 
 <script>
-
 import axios from 'axios';
 
 export default {
